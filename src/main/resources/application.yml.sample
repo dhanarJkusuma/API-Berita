@@ -1,0 +1,24 @@
+spring:
+  database:
+    driverClassName: org.postgresql.Driver
+  datasource:
+    username: test
+    password: test
+    platform: postgres
+    url: jdbc:postgresql://localhost:5433/apiberita
+  jpa:
+    hibernate:
+      ddl-auto: none
+      show-sql: false
+    properties:
+      jdbc:
+        lob:
+          non_contextual_creation: true
+
+
+hibernate:
+  dialect: org.hibernate.dialect.PostgreSQLDialect
+
+api-berita:
+  storage:
+    base-path: /tmp/
