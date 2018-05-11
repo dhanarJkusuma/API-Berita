@@ -3,9 +3,9 @@ spring:
   database:
     driverClassName: org.postgresql.Driver
   datasource:
-    username: test
-    password: test
-    url: jdbc:postgresql://localhost:5433/apiberita
+    url: ${JDBC_DATABASE_URL}
+    username: ${JDBC_DATABASE_USERNAME}
+    password: ${JDBC_DATABASE_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: none
